@@ -34,7 +34,7 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <p className="text-primary-foreground/60 text-sm">Telefono</p>
-                  <p className="text-primary-foreground font-medium">+1 (808) 555-0123</p>
+                  <p className="text-primary-foreground font-medium">Call John Pork</p>
                 </div>
               </div>
             </div>

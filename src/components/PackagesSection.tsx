@@ -34,7 +34,12 @@ const packages = [
     price: "125",
     description: "Soluzione completa",
     features: [
-      "Tutto del pacchetto Business",
+      "Sito web responsive avanzato",
+      "Design premium personalizzato",
+      "Ottimizzazione SEO",
+      "Google Analytics",
+      "Hosting e manutenzione sito web e mail",
+      "Supporto h24",
       "Gestione social media",
       "Grafiche personalizzate per eventi",
     ],
