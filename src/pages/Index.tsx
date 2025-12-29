@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+import { useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import PackagesSection from "@/components/PackagesSection";
@@ -7,27 +7,32 @@ import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 
 const Index = () => {
+  useEffect(() => {
+    document.title = "WebCraft - Creazione Siti Web per PMI | Web Agency Professionale";
+    
+    // Set meta description
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute("content", "WebCraft crea siti web professionali per piccole e medie imprese. Design moderno, SEO ottimizzato e soluzioni su misura. Richiedi un preventivo gratuito.");
+    } else {
+      const meta = document.createElement("meta");
+      meta.name = "description";
+      meta.content = "WebCraft crea siti web professionali per piccole e medie imprese. Design moderno, SEO ottimizzato e soluzioni su misura. Richiedi un preventivo gratuito.";
+      document.head.appendChild(meta);
+    }
+  }, []);
+
   return (
-    <>
-      <Helmet>
-        <title>WebCraft - Creazione Siti Web per PMI | Web Agency Professionale</title>
-        <meta
-          name="description"
-          content="WebCraft crea siti web professionali per piccole e medie imprese. Design moderno, SEO ottimizzato e soluzioni su misura. Richiedi un preventivo gratuito."
-        />
-        <meta name="keywords" content="creazione siti web, web agency, siti web PMI, web design, SEO" />
-      </Helmet>
-      <div className="min-h-screen bg-background">
-        <Navbar />
-        <main>
-          <HeroSection />
-          <PackagesSection />
-          <PortfolioSection />
-          <ContactSection />
-        </main>
-        <Footer />
-      </div>
-    </>
+    <div className="min-h-screen bg-background">
+      <Navbar />
+      <main>
+        <HeroSection />
+        <PackagesSection />
+        <PortfolioSection />
+        <ContactSection />
+      </main>
+      <Footer />
+    </div>
   );
 };
 
