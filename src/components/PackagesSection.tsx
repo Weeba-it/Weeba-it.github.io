@@ -5,45 +5,38 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 const packages = [
   {
     name: "Starter",
-    price: "499",
+    price: "50",
     description: "Perfetto per chi inizia",
     features: [
-      "Sito web responsive (fino a 3 pagine)",
+      "Sito web responsive base",
       "Design moderno e personalizzato",
-      "Ottimizzazione SEO base",
       "Form di contatto",
-      "1 mese di supporto",
+      "Hosting e manutenzione sito web e mail",
     ],
     popular: false,
   },
   {
     name: "Business",
-    price: "999",
+    price: "100",
     description: "Per aziende in crescita",
     features: [
-      "Sito web responsive (fino a 8 pagine)",
+      "Sito web responsive avanzato",
       "Design premium personalizzato",
-      "Ottimizzazione SEO avanzata",
-      "Blog integrato",
-      "Integrazione social media",
+      "Ottimizzazione SEO",
       "Google Analytics",
-      "3 mesi di supporto",
+      "Hosting e manutenzione sito web e mail",
+      "Supporto h24",
     ],
     popular: true,
   },
   {
     name: "Enterprise",
-    price: "1.999",
+    price: "125",
     description: "Soluzione completa",
     features: [
-      "Sito web illimitato",
-      "Design esclusivo su misura",
-      "SEO professionale completo",
-      "E-commerce integrato",
-      "Sistema di prenotazioni",
-      "Area clienti riservata",
-      "Dashboard analytics",
-      "12 mesi di supporto prioritario",
+      "Tutto del pacchetto Business",
+      "Gestione social media",
+      "Grafiche personalizzate per eventi",
     ],
     popular: false,
   },
@@ -86,7 +79,7 @@ const PackagesSection = () => {
                 </CardDescription>
                 <div className="mt-4">
                   <span className="text-4xl font-bold text-foreground">€{pkg.price}</span>
-                  <span className="text-muted-foreground">/progetto</span>
+                  <span className="text-muted-foreground">/mese</span>
                 </div>
               </CardHeader>
               <CardContent>

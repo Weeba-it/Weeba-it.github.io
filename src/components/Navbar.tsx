@@ -21,7 +21,7 @@ const Navbar = () => {
             <div className="w-10 h-10 bg-primary flex items-center justify-center">
               <span className="text-primary-foreground font-bold text-lg">W</span>
             </div>
-            <span className="font-semibold text-xl text-foreground">WebCraft</span>
+            <span className="font-semibold text-xl text-foreground">Weeba</span>
           </div>
 
           {/* Desktop Menu */}
