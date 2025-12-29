@@ -8,16 +8,16 @@ import Footer from "@/components/Footer";
 
 const Index = () => {
   useEffect(() => {
-    document.title = "WebCraft - Creazione Siti Web per PMI | Web Agency Professionale";
+    document.title = "Weeba - Creazione Siti Web per PMI | Web Agency Professionale";
     
     // Set meta description
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute("content", "WebCraft crea siti web professionali per piccole e medie imprese. Design moderno, SEO ottimizzato e soluzioni su misura. Richiedi un preventivo gratuito.");
+      metaDescription.setAttribute("content", "Weeba crea siti web professionali per piccole e medie imprese. Design moderno, SEO ottimizzato e soluzioni su misura. Richiedi un preventivo gratuito.");
     } else {
       const meta = document.createElement("meta");
       meta.name = "description";
-      meta.content = "WebCraft crea siti web professionali per piccole e medie imprese. Design moderno, SEO ottimizzato e soluzioni su misura. Richiedi un preventivo gratuito.";
+      meta.content = "Weeba crea siti web professionali per piccole e medie imprese. Design moderno, SEO ottimizzato e soluzioni su misura. Richiedi un preventivo gratuito.";
       document.head.appendChild(meta);
     }
   }, []);

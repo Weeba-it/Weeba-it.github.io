@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin } from "lucide-react";
+import { Mail, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -24,7 +24,7 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <p className="text-primary-foreground/60 text-sm">Email</p>
-                  <p className="text-primary-foreground font-medium">info@webcraft.it</p>
+                  <p className="text-primary-foreground font-medium">supporto@weeba.it</p>
                 </div>
               </div>
 
@@ -34,17 +34,7 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <p className="text-primary-foreground/60 text-sm">Telefono</p>
-                  <p className="text-primary-foreground font-medium">+39 02 1234 5678</p>
-                </div>
-              </div>
-
-              <div className="flex items-center gap-4">
-                <div className="w-12 h-12 bg-primary-foreground/10 flex items-center justify-center">
-                  <MapPin className="h-5 w-5 text-primary-foreground" />
-                </div>
-                <div>
-                  <p className="text-primary-foreground/60 text-sm">Indirizzo</p>
-                  <p className="text-primary-foreground font-medium">Via Roma 123, Milano</p>
+                  <p className="text-primary-foreground font-medium">+1 (808) 555-0123</p>
                 </div>
               </div>
             </div>

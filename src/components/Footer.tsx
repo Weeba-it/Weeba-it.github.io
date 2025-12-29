@@ -8,7 +8,7 @@ const Footer = () => {
               <div className="w-10 h-10 bg-background flex items-center justify-center">
                 <span className="text-foreground font-bold text-lg">W</span>
               </div>
-              <span className="font-semibold text-xl text-background">WebCraft</span>
+              <span className="font-semibold text-xl text-background">Weeba</span>
             </div>
             <p className="text-background/60 text-sm">
               Creiamo esperienze digitali che fanno crescere il tuo business.
@@ -91,7 +91,7 @@ const Footer = () => {
 
         <div className="border-t border-background/10 pt-8">
           <p className="text-center text-background/40 text-sm">
-            © {new Date().getFullYear()} WebCraft. Tutti i diritti riservati.
+            © {new Date().getFullYear()} Weeba. Tutti i diritti riservati.
           </p>
         </div>
       </div>
