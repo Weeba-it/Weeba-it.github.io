@@ -1,6 +1,14 @@
 import { Mail, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
+
 import { Textarea } from "@/components/ui/textarea";
 import emailjs from "@emailjs/browser";
 
@@ -18,9 +26,7 @@ const ContactSection = () => {
       alert("Messaggio inviato!");
       e.currentTarget.reset();
     })
-    .catch(() => {
-      alert("Errore nell'invio del messaggio. Riprova più tardi.");
-    });
+    
   };
 
   // ✅ return deve essere dentro il componente
@@ -101,6 +107,21 @@ const ContactSection = () => {
                   placeholder="Il tuo numero"
                   className="bg-card border-border"
                 />
+              </div>
+              <div>
+                <label className="text-sm font-medium text-muted-foreground mb-2 block">
+                  Tipo di pacchetto
+                </label>
+                <Select name="package_type">
+                  <SelectTrigger className="bg-card border-border">
+                    <SelectValue placeholder="Seleziona un pacchetto" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="starter">Starter</SelectItem>
+                    <SelectItem value="business">Business</SelectItem>
+                    <SelectItem value="enterprise">Enterprise</SelectItem>
+                  </SelectContent>
+                </Select>
               </div>
               <div>
                 <label className="text-sm font-medium text-muted-foreground mb-2 block">

@@ -1,6 +1,8 @@
 import { Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import ContactSection from "@/components/ContactSection";
+import { Link } from "react-router-dom";
 
 const packages = [
   {
@@ -96,7 +98,7 @@ const PackagesSection = () => {
                     </li>
                   ))}
                 </ul>
-                <Button
+                <Link to="/#contact"><Button
                   className={`w-full ${
                     pkg.popular
                       ? "bg-primary text-primary-foreground hover:bg-secondary"
@@ -105,6 +107,7 @@ const PackagesSection = () => {
                 >
                   Scegli {pkg.name}
                 </Button>
+                </Link>
               </CardContent>
             </Card>
           ))}

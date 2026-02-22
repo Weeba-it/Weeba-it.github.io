@@ -19,7 +19,9 @@ const Navbar = () => {
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center">
-            <img src={weebaLogo} alt="Weeba Logo" className="h-10" />
+            <button onClick={() => scrollToSection("home")}>
+              <img src={weebaLogo} alt="Weeba Logo" className="h-10" />
+            </button>
           </div>
 
           {/* Desktop Menu */}

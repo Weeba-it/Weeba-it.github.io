@@ -27,6 +27,30 @@ const RouterWrapper = () => {
     handleGitHubPagesRouting();
   }, [navigate]);
 
+  useEffect(() => {
+    if (!location) return;
+    const hash = location.hash;
+    if (!hash) return;
+
+    const id = hash.replace('#', '');
+    const scrollToElement = () => {
+      const el = document.getElementById(id);
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        return true;
+      }
+      return false;
+    };
+
+    // Try immediate scroll, otherwise retry shortly to allow DOM to mount
+    if (!scrollToElement()) {
+      const t = setTimeout(() => {
+        scrollToElement();
+      }, 100);
+      return () => clearTimeout(t);
+    }
+  }, [location]);
+
   return (
     <Routes>
       <Route path="/" element={<Index />} />
