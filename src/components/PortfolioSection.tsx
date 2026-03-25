@@ -2,13 +2,6 @@ import { ExternalLink } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
 const projects = [
-  {/* {
-    title: "Sigma Gooners (Never Goon)",
-    category: "Servizi di prostituzione online",
-    description: "Non ho parole per commentarlo",
-    image: "https://media.tenor.com/0FHhIn30HlEAAAAe/never-goon-bozonga.png",
-    url: "https://sigmagooners.it"
-  }, */}
   {
     title: "Centro scommesse quartiere san paolo",
     category: "Servizi Professionali",
