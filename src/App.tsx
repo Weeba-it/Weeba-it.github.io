@@ -2,9 +2,7 @@ import { BrowserRouter, Routes, Route, useLocation, useNavigate } from "react-ro
 import { useEffect } from "react";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
-import Gay from "./pages/Gay";
-import Sofia from "./pages/Sofia";
-import SofiaLove from "./pages/SofiaLove";
+
 
 
 const RouterWrapper = () => {
@@ -54,9 +52,6 @@ const RouterWrapper = () => {
   return (
     <Routes>
       <Route path="/" element={<Index />} />
-      <Route path="/frocio" element={<Gay />} />
-      <Route path="/gay" element={<Gay />} />
-      <Route path="/sofia" element={<Sofia />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
   );
